@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project was built using Next.js, TypeScript, TailwindCSS, Clerk, React, MongoDB, shadcn, uploadthing, Web Hooks, mongoose, svix
 
 ## Getting Started
 
