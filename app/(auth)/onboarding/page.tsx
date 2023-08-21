@@ -11,7 +11,7 @@ async function Page() {
     objectId: userInfo?._id,
     username: userInfo?.username || user?.username,
     name: userInfo?.name || user?.firstName || "",
-    image: userInfo?.image || user.imageUrl
+    image: userInfo?.image || user?.imageUrl
   }
 
   return (

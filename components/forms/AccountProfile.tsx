@@ -35,10 +35,10 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
   const form = useForm({
     resolver: zodResolver(UserValidation),
     defaultValues: {
-      profile_photo: '',
-      name: '',
-      username: '',
-      bio: ''
+      profile_photo: user?.image || "",
+      name: user?.name || "",
+      username: user?.username || "",
+      bio: user?.bio || ""
     }
   })
 
@@ -57,7 +57,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start gap-10">
         <FormField
           control={form.control}
-          name="username"
+          name="profile_photo"
           render={({ field }) => (
             <FormItem className="flex items-center gap-4">
               <FormLabel className="account-form_image-label">
