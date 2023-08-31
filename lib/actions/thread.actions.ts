@@ -63,3 +63,11 @@ export async function fetchThreads(pageNumber = 1, pageSize = 20) {
     throw new Error(`Failed to fetch threads: ${error.message}`)
   }
 }
+
+export async function fetchThreadById(id: string) {
+  try {
+    connectToDB()
+  } catch (error) {
+    
+  }
+}
