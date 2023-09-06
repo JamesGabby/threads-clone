@@ -34,7 +34,12 @@ const Page = async () => {
           <>
             {result.users.map((person) => (
               <UserCard
-                 
+                key={person.id}
+                id={person.id}
+                name={person.name}
+                username={person.username}
+                imgUrl={person.image}
+                personType='User'
               />
             ))}
           </>
